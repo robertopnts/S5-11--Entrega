@@ -50,3 +50,13 @@ function calculateStock(estoqueAtual, estoqueMax, estoqueMin){
   }
 }
 
+function calculateAge(birthYear, currentYear){
+  let ageYears = currentYear - birthYear
+  let ageMonths = ageYears*12
+  let ageDays = ageMonths*30
+  let ageWeeks = ageMonths*4
+
+  return `A pessoa em questão possui ${ageYears} anos de idade. Possui ${ageMonths} meses de idade. Possui ${ageDays} dias de idade. E possui ${ageWeeks} semanas de idade.`
+}
+
+console.log(calculateAge(1994,2022))
