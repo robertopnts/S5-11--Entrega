@@ -41,5 +41,12 @@ function cashMachine(withdrawValue){
   }
 }
 
-console.log(calculateSalary(1400, 1500))
-console.log(cashMachine(50))
+function calculateStock(estoqueAtual, estoqueMax, estoqueMin){
+  let qtdMedia = (estoqueMax + estoqueMin)/2
+  if (estoqueAtual >= qtdMedia){
+    return `Não efetuar compra`
+  } else {
+    return `Efetuar compra`
+  }
+}
+
