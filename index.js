@@ -59,4 +59,16 @@ function calculateAge(birthYear, currentYear){
   return `A pessoa em questão possui ${ageYears} anos de idade. Possui ${ageMonths} meses de idade. Possui ${ageDays} dias de idade. E possui ${ageWeeks} semanas de idade.`
 }
 
-console.log(calculateAge(1994,2022))
+function getDiagonal(sqrMatrix){
+  let arrDiag = []
+
+  for(let i=0; i<=sqrMatrix.length-1;i++){
+    for(let j=0; j<=sqrMatrix[i].length-1;j++){
+      if (i==j){
+        arrDiag.push(sqrMatrix[i][j])
+      }
+    }
+  }
+  return arrDiag
+}
+
